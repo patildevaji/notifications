@@ -1,5 +1,8 @@
 const slackService = require('../services/slackService');
 
+const notificationRepo = require('../repositories/localRepository');
+
+
 const receiveNotification = async (req, res) => {
     const { type, name, description } = req.body;
 
